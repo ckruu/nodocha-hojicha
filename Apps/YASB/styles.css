@@ -601,7 +601,7 @@ QPushButton {
     padding-left: 6px;
 }
 .language-widget .label {
-    padding-left: -2px;
+    padding-left: -1px;
 }
 .custom-widget .label {
     color: #F4FFEF44;
