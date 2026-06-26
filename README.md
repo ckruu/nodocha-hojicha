@@ -20,6 +20,17 @@ A calm, greenish theme inspired by my favorite character from K-ON Nodoka Manabe
 ![Preview 5](./Assets/Screenshots/p5.png)
 ![Preview 6](./Assets/Screenshots/p6.png)
 
+#### Features
+- Matching themes across several apps and system parts
+- Reimagined Windows UI
+- Fully Keyboard driven
+- Clean and simplicity in mind, focusing productivity
+
+#### Planned features & stuff
+- More CSS updates for the web
+- Maybe cider TUI CSS? idk
+- Tuning down the monospaced fonts
+
 ### 🦅 Windhawk Mods
 #### Configured
 [Lockscreen](./Windhawk/Lockscreen.txt) • [Taskbar styler](./Windhawk/Taskbar%20Styler.txt) • [Notification Center Styler](./Windhawk/Notification%20Center.txt) • [Translucent Windows](./Windhawk/Translucent%20Windows.txt) • [Taskbar height and icon size](./Windhawk/Taskbar%20Height.txt) • [Taskbar tray system icon tweaks](./Windhawk/Taskbar%20tray.txt)
