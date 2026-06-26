@@ -28,7 +28,6 @@ A calm, greenish theme inspired by my favorite character from K-ON Nodoka Manabe
 
 #### Planned features & stuff
 - More CSS updates for the web
-- Maybe cider TUI CSS? idk
 - Tuning down the monospaced fonts
 
 ### 🦅 Windhawk Mods
