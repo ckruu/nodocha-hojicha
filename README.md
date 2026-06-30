@@ -13,12 +13,12 @@ A calm, greenish theme inspired by my favorite character from K-ON Nodoka Manabe
 <div>
 
 ### 🖼️ Preview
-![Preview 1](./Assets/Screenshots/p1.png)
-![Preview 2](./Assets/Screenshots/p2.png)
-![Preview 3](./Assets/Screenshots/p3.png)
-![Preview 4](./Assets/Screenshots/p4.png)
-![Preview 5](./Assets/Screenshots/p5.png)
-![Preview 6](./Assets/Screenshots/p6.png)
+![Preview 1](./Misc/Screenshots/p1.png)
+![Preview 2](./Misc/Screenshots/p2.png)
+![Preview 3](./Misc/Screenshots/p3.png)
+![Preview 4](./Misc/Screenshots/p4.png)
+![Preview 5](./Misc/Screenshots/p5.png)
+![Preview 6](./Misc/Screenshots/p6.png)
 
 #### Features
 - Matching themes across several apps and system parts
