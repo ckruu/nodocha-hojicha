@@ -5,6 +5,7 @@
 
 # NodoCha Hojicha
 A calm, greenish theme inspired by my favorite character from K-ON Nodoka Manabe. Crafted to match her gentle tone and personality, in dark mode.
+> Normal variants of NodoCha is going through yet another rewrite, focusing more on Nodoka Manabe's calm personality and minimalizing the use of monospaced fonts while also replacing the looks from Iosevka to another font, and further improving the overall consistency. TUI theme and others are moved to [TUI-Cha](https://github.com/ckruu/TUI-Cha)!
 
 [Preview](#preview) • [Windhawk Mods](#windhawk-mods) • [App Themes](#apps-themes) • [Misc](#misc)
 
@@ -17,8 +18,6 @@ A calm, greenish theme inspired by my favorite character from K-ON Nodoka Manabe
 ![Preview 2](./Misc/Screenshots/p2.png)
 ![Preview 3](./Misc/Screenshots/p3.png)
 ![Preview 4](./Misc/Screenshots/p4.png)
-![Preview 5](./Misc/Screenshots/p5.png)
-![Preview 6](./Misc/Screenshots/p6.png)
 
 #### Features
 - Matching themes across several apps and system parts
