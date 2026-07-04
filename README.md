@@ -19,7 +19,7 @@ A calm, greenish theme inspired by my favorite character from K-ON Nodoka Manabe
 ![Preview 3](./Misc/Screenshots/p3.png)
 ![Preview 4](./Misc/Screenshots/p4.png)
 
-> Screenshots are sttill WIP, every stuff below this part isn't updated yet. this message will be deleted in the future.
+> Screenshots are still WIP, every stuff below this part isn't updated yet to reflect the shown screenshot. this message will be deleted in the future.
 
 #### Features
 - Matching themes across several apps and system parts
