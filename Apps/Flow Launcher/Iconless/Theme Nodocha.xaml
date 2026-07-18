@@ -5,7 +5,7 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="pack://application:,,,/Themes/Win11Light.xaml" />
     </ResourceDictionary.MergedDictionaries>
-    <system:Boolean x:Key="ThemeBlurEnabled">False</system:Boolean>
+    <system:Boolean x:Key="ThemeBlurEnabled">True</system:Boolean>
     <system:String x:Key="SystemBG">#181F1C</system:String>
     <Color x:Key="LightBG">#181F1C</Color>
     <Color x:Key="DarkBG">#181F1C</Color>
@@ -13,21 +13,21 @@
         x:Key="ItemBulletSelectedStyle"
         BasedOn="{StaticResource ItemBulletSelectedStyle}"
         TargetType="{x:Type Border}">
-        <Setter Property="Background" Value="#a6e3a1" />
+        <Setter Property="Background" Value="#A6D4A0" />
     </Style>
     <Style
         x:Key="ItemGlyph"
         BasedOn="{StaticResource ItemGlyph}"
         TargetType="{x:Type TextBlock}">
-        <Setter Property="Foreground" Value="#11ff00" />
+        <Setter Property="Foreground" Value="#A6D4A0" />
     </Style>
     <Style
         x:Key="QueryBoxStyle"
         BasedOn="{StaticResource QueryBoxStyle}"
         TargetType="{x:Type TextBox}">
         <Setter Property="Foreground" Value="#F4FFEF" />
-        <Setter Property="CaretBrush" Value="#A6E3A1" />
-        <Setter Property="SelectionBrush" Value="#A6E3A1" />
+        <Setter Property="CaretBrush" Value="#A6D4A0" />
+        <Setter Property="SelectionBrush" Value="#A6D4A0" />
     </Style>
     <Style
         x:Key="QuerySuggestionBoxStyle"
@@ -40,13 +40,12 @@
         x:Key="WindowBorderStyle"
         BasedOn="{StaticResource WindowBorderStyle}"
         TargetType="{x:Type Border}">
-        <Setter Property="BorderThickness" Value="2" />
-        <Setter Property="CornerRadius" Value="0" />
-        <Setter Property="BorderBrush" Value="#A6E3A1" />
+        <Setter Property="BorderThickness" Value="2.8" />
+        <Setter Property="CornerRadius" Value="8" />
+        <Setter Property="BorderBrush" Value="#A6D4A0" />
         <Setter Property="Background" Value="#181F1C" />
     </Style>
 
-    <!--  Item Style  -->
     <Style
         x:Key="ItemTitleStyle"
         BasedOn="{StaticResource ItemTitleStyle}"
@@ -57,6 +56,9 @@
         x:Key="ItemSubTitleStyle"
         BasedOn="{StaticResource ItemSubTitleStyle}"
         TargetType="{x:Type TextBlock}">
+        <Setter Property="Visibility" Value="Collapsed" />
+        <Setter Property="Height" Value="0" />
+        <Setter Property="Margin" Value="0" />
         <Setter Property="Foreground" Value="#7c8378" />
     </Style>
     <Style
@@ -75,12 +77,12 @@
         x:Key="ItemSubTitleSelectedStyle"
         BasedOn="{StaticResource ItemSubTitleSelectedStyle}"
         TargetType="{x:Type TextBlock}">
-        <Setter Property="Foreground" Value="#7c8378" />
+        <Setter Property="Visibility" Value="Collapsed" />
+        <Setter Property="Height" Value="0" />
+        <Setter Property="Margin" Value="0" />
     </Style>
-    <SolidColorBrush x:Key="ItemSelectedBackgroundColor">#a6e3a1</SolidColorBrush>
+    <SolidColorBrush x:Key="ItemSelectedBackgroundColor">#A6D4A0</SolidColorBrush>
 
-
-    <!--  button style in the middle of the scrollbar  -->
     <Style
         x:Key="ThumbStyle"
         BasedOn="{StaticResource ThumbStyle}"
@@ -92,7 +94,7 @@
                         Background="#181F1C"
                         BorderBrush="Transparent"
                         BorderThickness="0"
-                        CornerRadius="0"
+                        CornerRadius="8"
                         DockPanel.Dock="Right" />
                 </ControlTemplate>
             </Setter.Value>
@@ -102,20 +104,26 @@
         x:Key="SearchIconStyle"
         BasedOn="{StaticResource SearchIconStyle}"
         TargetType="{x:Type Path}">
-        <Setter Property="Fill" Value="#181F1C" />
+        <Setter Property="Fill" Value="#242a28" />
+        <Setter Property="Width" Value="1" />
+        <Setter Property="Height" Value="1" />
     </Style>
     <Style x:Key="SearchIconPosition" BasedOn="{StaticResource SearchIconPosition}" TargetType="{x:Type Canvas}">
-        <Setter Property="Background" Value="#181F1C" />
+        <Setter Property="Background" Value="#242a28" />
+        <Setter Property="Width" Value="1" />
+        <Setter Property="Height" Value="1" />
+        <Setter Property="Margin" Value="0 8 8 0" />
+        <Setter Property="HorizontalAlignment" Value="Right" />
     </Style>
 
     <Style x:Key="ItemHotkeyStyle" TargetType="{x:Type TextBlock}">
         <Setter Property="Foreground" Value="#6c7086" />
     </Style>
     <Style x:Key="ItemHotkeySelectedStyle" TargetType="{x:Type TextBlock}">
-        <Setter Property="Foreground" Value="#A6E3A1" />
+        <Setter Property="Foreground" Value="#A6D4A0" />
     </Style>
     <Style x:Key="ItemGlyphSelectedStyle" BasedOn="{StaticResource ItemGlyphSelectedStyle}" TargetType="{x:Type TextBlock}">
-        <Setter Property="Foreground" Value="#A6E3A1" />
+        <Setter Property="Foreground" Value="#A6D4A0" />
     </Style>
     <Style
         x:Key="ClockBox"
