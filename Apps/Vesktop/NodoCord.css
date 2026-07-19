@@ -1,0 +1,765 @@
+/**
+ * @name NodoCord
+ * @author Abima
+ * @version 1.0
+ * @description NodoCha for Discord 💚
+ */
+
+:root {
+    --rosewater: #f5e0dc;
+    --flamingo: #f2cdcd;
+    --pink: #f5c2e7;
+    --mauve: #a6d4a0;
+    --red: #f38ba8;
+    --maroon: #eba0ac;
+    --peach: #fab387;
+    --yellow: #F0DFAD;
+    --green: #a6d4a0;
+    --teal: #94e2d5;
+    --sky: #9CDBD6;
+    --sapphire: #9CDBD6;
+    --blue: #a6d4a0;
+    --lavender: #C7BAFA;
+    --text: #E7FFE5;
+    --subtext1: #c3d6bf;
+    --subtext0: #a9bba5;
+    --overlay2: #8fa18b;
+    --overlay1: #788a74;
+    --overlay0: #687064;
+    --surface2: #3a423a;
+    --surface1: #1f2620;
+    --surface0: #1c231e;
+    --base: #181F1C;
+    --mantle: #151b18;
+    --crust: #11140f;
+    --trbg: #181f1c;
+    --hover: #cdd6f40c;
+}
+
+.visual-refresh.theme-dark,
+.visual-refresh .theme-dark {
+    /* brand / accent ramp, generated from --green (#a6d4a0) */
+    --brand-100: #f4faf2;
+    --brand-130: #e9f6e5;
+    --brand-160: #ddf1d7;
+    --brand-200: #d1edc9;
+    --brand-230: #c5e8bc;
+    --brand-260: #bae4ae;
+    --brand-300: #aee0a1;
+    --brand-330: #a6d4a0;
+    --brand-360: #97d791;
+    --brand-400: #82cd7c;
+    --brand-430: #6dc367;
+    --brand-460: #58b952;
+    --brand-500: #a6d4a0 !important;
+    --brand-530: #6dc367;
+    --brand-560: #58b952;
+    --brand-600: #44ab3e;
+    --brand-630: #3a9335;
+    --brand-660: #307b2c;
+    --brand-700: #266322;
+    --brand-730: #225a1f;
+    --brand-760: #1e511b;
+    --brand-800: #1a4818;
+    --brand-830: #163f14;
+    --brand-860: #123611;
+    --brand-900: #0e2d0d;
+    --brand-05a: rgba(166, 227, 161, 0.05);
+    --brand-10a: rgba(166, 227, 161, 0.1);
+    --brand-15a: rgba(166, 227, 161, 0.15);
+    --brand-20a: rgba(166, 227, 161, 0.2);
+    --brand-25a: rgba(166, 227, 161, 0.25);
+    --brand-30a: rgba(166, 227, 161, 0.3);
+    --brand-35a: rgba(166, 227, 161, 0.35);
+    --brand-40a: rgba(166, 227, 161, 0.4);
+    --brand-45a: rgba(166, 227, 161, 0.45);
+    --brand-50a: rgba(166, 227, 161, 0.5);
+    --brand-55a: rgba(166, 227, 161, 0.55);
+    --brand-60a: rgba(166, 227, 161, 0.6);
+    --brand-65a: rgba(166, 227, 161, 0.65);
+    --brand-70a: rgba(166, 227, 161, 0.7);
+    --brand-75a: rgba(166, 227, 161, 0.75);
+    --brand-80a: rgba(166, 227, 161, 0.8);
+    --brand-85a: rgba(166, 227, 161, 0.85);
+    --brand-90a: rgba(166, 227, 161, 0.9);
+    --brand-95a: rgba(166, 227, 161, 0.95);
+
+    --__header-bar-background: var(--base) !important;
+    --text-default: var(--text);
+    --text-muted: var(--subtext0) !important;
+    --text-link: var(--brand-500) !important;
+    --text-brand: var(--brand-500);
+    --text-strong: var(--text) !important;
+    --text-subtle: var(--subtext1);
+    --text-feedback-positive: #a6d4a0;
+    --text-feedback-critical: #f38ba8;
+    --text-feedback-warning: #F0DFAD;
+    --text-feedback-info: var(--brand-500);
+
+    --message-reacted-background-default: rgba(166, 227, 161, 0.3) !important;
+    --message-reacted-text-default: var(--brand-500);
+    --opacity-blurple-8: var(--brand-05a);
+    --opacity-blurple-16: var(--brand-10a);
+    --opacity-blurple-24: var(--brand-15a);
+    --opacity-blurple-32: var(--brand-20a);
+    --opacity-blurple-60: var(--brand-60a);
+    --blurple-50: var(--brand-500);
+    --blurple-60: var(--brand-560);
+
+    /* FLAT BACKGROUND — everything pinned to one base color, no layering */
+    --app-frame-background: var(--base);
+    --background-secondary-alt: var(--base) !important;
+    --background-accent: var(--surface2) !important;
+    --background-surface-highest: var(--base) !important;
+    --background-surface-higher: var(--base) !important;
+    --background-surface-high: var(--base) !important;
+    --background-base-lowest: var(--base) !important;
+    --background-base-lower: var(--base) !important;
+    --background-base-low: var(--base) !important;
+    --bg-surface-raised: var(--base);
+    --background-gradient-highest: var(--base);
+    --home-background: var(--base);
+    --chat-background: var(--base);
+    --chat-background-default: var(--base);
+    --chat-border: var(--base);
+    --chat-text-muted: var(--subtext0);
+
+    --checkbox-icon-active: var(--base);
+    --checkbox-border-default: var(--overlay0);
+    --radio-thumb-background-active: var(--base);
+    --border-muted: var(--surface0);
+    --border-strong: var(--base);
+    --border-normal: var(--base);
+    --border-subtle: var(--base) !important;
+
+    --background-mod-muted: rgba(166, 227, 161, 0.05);
+    --background-mod-normal: rgba(166, 227, 161, 0.1);
+    --background-mod-subtle: rgba(166, 227, 161, 0.16) !important;
+    --background-mod-strong: rgba(166, 227, 161, 0.28) !important;
+
+    --custom-channel-members-bg: var(--base);
+    --custom-status-bubble-background: var(--base) !important;
+    --custom-status-bubble-background-color: var(--base) !important;
+    --card-background-default: var(--surface0) !important;
+
+    --background-feedback-positive: rgba(166, 227, 161, 0.15);
+    --icon-feedback-positive: #a6d4a0;
+    --background-feedback-warning: rgba(240, 223, 173, 0.15);
+    --icon-feedback-warning: #F0DFAD;
+    --background-feedback-critical: rgba(235, 152, 155, 0.15);
+    --icon-feedback-critical: #EB989B;
+    --background-feedback-info: rgba(156, 219, 214, 0.15);
+    --icon-feedback-info: #9CDBD6;
+    --background-feedback-notification: #EB989B;
+    --icon-feedback-notification: #EB989B;
+    --badge-notification-background: #EB989B;
+
+    --status-positive: #a6d4a0;
+    --status-positive-background: #a6d4a0;
+    --status-positive-text: var(--base);
+    --status-warning: #F0DFAD;
+    --status-warning-background: #F0DFAD;
+    --status-warning-text: var(--base);
+    --status-danger: #EB989B;
+
+    --black-500: var(--crust);
+    --green-360: #a6d4a0;
+    --green-300: #a6d4a0;
+    --yellow-360: #F0DFAD;
+    --yellow-300: #F0DFAD;
+    --red-400: #EB989B;
+    --red-430: #e07d82;
+    --red-500: #d6646a;
+    --blue-500: var(--brand-560);
+    --blue-530: var(--brand-600);
+
+    --primary-100: var(--subtext1);
+    --primary-200: var(--subtext0);
+    --primary-300: var(--subtext1);
+    --primary-400: var(--subtext1);
+    --primary-630: var(--surface0);
+    --primary-700: var(--surface2);
+    --primary-800: var(--base);
+    --white: var(--text);
+    --white-500: var(--text);
+
+    --guild-boosting-pink: #f5c2e7;
+    --guild-boosting-blue: var(--brand-500);
+    --guild-boosting-purple: #C7BAFA;
+    --premium-perk-yellow: #F0DFAD;
+    --premium-perk-purple: #C7BAFA;
+    --premium-perk-dark-blue: var(--brand-560);
+    --premium-perk-light-blue: var(--brand-460);
+    --premium-perk-blue: var(--brand-500);
+    --premium-perk-green: #a6d4a0;
+    --premium-perk-pink: #f5c2e7;
+    --premium-perk-orange: #fab387;
+    --premium-tier-0-blue: var(--brand-500);
+    --premium-tier-0-purple: #C7BAFA;
+    --premium-tier-1-blue-for-gradients: #9CDBD6;
+    --premium-tier-1-dark-blue-for-gradients: var(--brand-500);
+    --premium-tier-2-purple-for-gradients: #b077f3;
+    --premium-tier-2-purple-for-gradients-2: #C7BAFA;
+    --premium-tier-2-pink-for-gradients: #f5c2e7;
+
+    --control-primary-background-default: var(--brand-500);
+    --control-primary-background-hover: var(--brand-530);
+    --control-primary-background-active: var(--brand-460);
+    --control-secondary-background-default: var(--surface2) !important;
+    --control-secondary-background-hover: #454d45;
+    --control-secondary-background-active: #3e463e;
+    --control-secondary-border-default: var(--surface0);
+    --control-secondary-text-default: var(--text) !important;
+    --control-secondary-text-hover: var(--text);
+
+    --control-critical-primary-background-default: #EB989B;
+    --control-critical-primary-background-hover: #e57f83;
+    --control-critical-primary-background-active: #de676c;
+    --control-critical-primary-text-default: var(--base);
+    --control-critical-primary-text-hover: var(--base);
+    --control-critical-secondary-background-default: transparent;
+    --control-critical-secondary-background-hover: #ed9396;
+    --control-critical-secondary-background-active: #e57f83;
+    --control-critical-secondary-border-default: #EB989B;
+    --control-critical-secondary-border-hover: #ed9396;
+    --control-critical-secondary-border-active: #ed9396;
+    --control-critical-secondary-text-default: var(--text);
+    --control-critical-secondary-text-hover: var(--base);
+    --control-critical-secondary-text-active: var(--base);
+
+    --control-connected-background-default: #a6d4a0;
+    --control-connected-background-hover: #93dd8d;
+    --control-connected-background-active: #8ada84;
+    --control-connected-border-default: #a6d4a0;
+    --control-connected-border-hover: #9de097;
+    --control-connected-border-active: #9de097;
+
+    --button-outline-primary-text: var(--text);
+    --button-outline-brand-text: var(--text);
+    --button-outline-brand-background-hover: var(--brand-360);
+    --button-outline-brand-border-active: var(--brand-360);
+
+    --modal-background: var(--base) !important;
+    --modal-footer-background: var(--base);
+
+    --scrollbar-thin-thumb: var(--brand-500);
+    --scrollbar-thin-track: transparent;
+    --scrollbar-auto-thumb: var(--brand-500);
+    --scrollbar-auto-track: var(--base);
+    --scrollbar-auto-scrollbar-color-thumb: var(--brand-500);
+    --scrollbar-auto-scrollbar-color-track: var(--base);
+
+    --input-background-default: var(--crust);
+    --input-text-default: var(--text);
+    --input-placeholder-text-default: var(--subtext1);
+    --input-border-default: var(--overlay0);
+
+    --logo-primary: var(--text);
+    --control-brand-foreground: var(--brand-500);
+    --control-brand-foreground-new: var(--brand-500);
+    --mention-foreground: var(--brand-500);
+    --mention-background: rgba(166, 227, 161, 0.3);
+    --message-mentioned-background-default: rgba(240, 223, 173, 0.1);
+    --message-mentioned-background-hover: rgba(240, 223, 173, 0.08);
+    --message-background-hover: rgba(17, 20, 15, 0.3) !important;
+    --message-automod-background-default: rgba(245, 224, 220, 0.05);
+    --message-automod-background-hover: rgba(245, 224, 220, 0.1);
+    --message-highlight-background-default: rgba(166, 227, 161, 0.08);
+    --message-highlight-background-hover: rgba(166, 227, 161, 0.06);
+
+    --background-code: var(--base);
+    --channels-default: #8fa18b !important;
+    --channel-icon: #8fa18b !important;
+    --channel-text-area-placeholder: rgba(231, 255, 229, 0.5);
+    --channeltextarea-background: var(--base);
+    --icon-muted: #8fa18b !important;
+    --icon-voice-muted: #EB989B;
+    --icon-default: var(--text);
+    --icon-strong: var(--text);
+    --icon-subtle: var(--subtext1);
+    --textbox-markdown-syntax: var(--overlay0);
+    --spoiler-revealed-background: var(--surface0);
+    --spoiler-hidden-background: var(--surface2);
+
+    --__adaptive-focus-ring-color: var(--brand-500);
+    --interactive-icon-default: var(--text) !important;
+    --interactive-icon-hover: var(--text);
+    --interactive-icon-active: var(--text);
+    --interactive-text-default: var(--text) !important;
+    --interactive-text-hover: var(--text);
+    --interactive-text-active: var(--text);
+    --interactive-muted: var(--overlay0);
+    --interactive-background-hover: rgba(166, 227, 161, 0.1);
+    --interactive-background-selected: rgba(166, 227, 161, 0.16);
+    --interactive-background-active: rgba(231, 255, 229, 0.12);
+
+    --__spoiler-background-color--hidden: var(--surface2);
+    --__spoiler-warning-background-color: #495849;
+
+    --user-profile-overlay-background: var(--base);
+    --user-profile-overlay-background-hover: var(--surface0);
+    --plum-23: var(--base);
+    --badge-text-brand: var(--base);
+
+    --text-status-online: #a6d4a0;
+    --text-status-idle: #F0DFAD;
+    --text-status-dnd: #EB989B;
+    --text-status-offline: var(--subtext1);
+    --icon-status-online: #a6d4a0;
+    --icon-status-idle: #F0DFAD;
+    --icon-status-dnd: #EB989B;
+    --icon-status-offline: var(--subtext1);
+
+    --twitch: #b077f3;
+    --playstation: var(--brand-560);
+    --spotify: #a6d4a0;
+
+    --notice-background-critical: #EB989B;
+    --notice-background-info: var(--brand-500);
+    --notice-background-positive: #a6d4a0;
+    --notice-background-warning: #F0DFAD;
+    --notice-text-critical: var(--base);
+    --notice-text-info: var(--base);
+    --notice-text-positive: var(--base);
+    --notice-text-warning: var(--base);
+
+    --thread-default: var(--channels-default);
+    --thread-core: var(--text-default);
+    --thread-spine: var(--spine-default);
+    --thread-muted: var(--text-muted);
+}
+
+/* ---------- flat-bg cleanup: kill gradients / raised-panel illusions ---------- */
+.visual-refresh.theme-dark div[class^=overlay_][class*=darkThemeGradient_],
+.visual-refresh .theme-dark div[class^=overlay_][class*=darkThemeGradient_] {
+    background: var(--base);
+}
+.visual-refresh.theme-dark div[class^=textContentFooter_],
+.visual-refresh .theme-dark div[class^=textContentFooter_] {
+    background: var(--base) !important;
+}
+.visual-refresh.theme-dark div[class^=textContentFooter_] [class*=tagPill_],
+.visual-refresh .theme-dark div[class^=textContentFooter_] [class*=tagPill_] {
+    background-color: var(--surface2);
+}
+
+/* ---------- misc accent fixes (white-on-brand buttons, etc.) ---------- */
+.visual-refresh.theme-dark button[class*=button_][class*=lookFilled_][class*=colorBrand_]:not(:has(>div>div[class*=buttonIcon_])),
+.visual-refresh .theme-dark button[class*=button_][class*=lookFilled_][class*=colorBrand_]:not(:has(>div>div[class*=buttonIcon_])) {
+    color: var(--base) !important;
+}
+.visual-refresh.theme-dark button.vc-btn-primary,
+.visual-refresh .theme-dark button.vc-btn-primary {
+    color: var(--base) !important;
+    background-color: var(--brand-500) !important;
+}
+.visual-refresh.theme-dark button.vc-btn-primary:hover,
+.visual-refresh .theme-dark button.vc-btn-primary:hover {
+    background-color: var(--brand-530) !important;
+}
+.visual-refresh.theme-dark button.vc-btn-primary:active,
+.visual-refresh .theme-dark button.vc-btn-primary:active {
+    background-color: var(--brand-460) !important;
+}
+.visual-refresh.theme-dark button[class^=button_][class*=" primary_"],
+.visual-refresh .theme-dark button[class^=button_][class*=" primary_"] {
+    color: var(--base) !important;
+    background-color: var(--brand-500) !important;
+}
+.visual-refresh.theme-dark button[class^=button_][class*=" primary_"]:hover,
+.visual-refresh .theme-dark button[class^=button_][class*=" primary_"]:hover {
+    background-color: var(--brand-530) !important;
+}
+.visual-refresh.theme-dark button[class^=button_][class*=" primary_"]:active,
+.visual-refresh .theme-dark button[class^=button_][class*=" primary_"]:active {
+    background-color: var(--brand-460) !important;
+}
+.visual-refresh.theme-dark button[class*=button_][class*=active_],
+.visual-refresh.theme-dark button.vc-btn-positive,
+.visual-refresh .theme-dark button[class*=button_][class*=active_],
+.visual-refresh .theme-dark button.vc-btn-positive {
+    color: var(--base) !important;
+}
+.visual-refresh.theme-dark div[class^=automodText_],
+.visual-refresh .theme-dark div[class^=automodText_] { color: var(--base); }
+.visual-refresh.theme-dark div[class^=pinIcon_]>svg>path,
+.visual-refresh .theme-dark div[class^=pinIcon_]>svg>path { fill: var(--base); }
+.visual-refresh.theme-dark div[class^=bannerContainer_] [style*="color: white"],
+.visual-refresh.theme-dark div[class^=friendRequestContainer_]>button[class*=colorGreen_] [style*="color: white"],
+.visual-refresh .theme-dark div[class^=bannerContainer_] [style*="color: white"],
+.visual-refresh .theme-dark div[class^=friendRequestContainer_]>button[class*=colorGreen_] [style*="color: white"] {
+    color: var(--base) !important;
+}
+.visual-refresh.theme-dark button[class*=selectorButtonSelected_] div[class*=selectorText_],
+.visual-refresh.theme-dark button:hover div[class*=selectorText_],
+.visual-refresh .theme-dark button[class*=selectorButtonSelected_] div[class*=selectorText_],
+.visual-refresh .theme-dark button:hover div[class*=selectorText_] { color: var(--base); }
+.visual-refresh.theme-dark svg[class^=selectedIcon_]>circle[fill=white],
+.visual-refresh .theme-dark svg[class^=selectedIcon_]>circle[fill=white] { fill: var(--base); }
+.visual-refresh.theme-dark div[class*=textBadge_][class*=base_][style*="background-color: var(--background-accent)"],
+.visual-refresh .theme-dark div[class*=textBadge_][class*=base_][style*="background-color: var(--background-accent)"] {
+    --white: var(--text);
+}
+.visual-refresh.theme-dark div[class*=winButtonClose_]:hover,
+.visual-refresh .theme-dark div[class*=winButtonClose_]:hover { color: var(--base); }
+.visual-refresh.theme-dark div[class^=bar_][class*=unreadMentionsBar_],
+.visual-refresh .theme-dark div[class^=bar_][class*=unreadMentionsBar_] { color: var(--base); }
+.visual-refresh.theme-dark ::selection,
+.visual-refresh .theme-dark ::selection { background-color: rgba(166, 227, 161, 0.6); }
+.visual-refresh.theme-dark div[class^=newMessagesBar_],
+.visual-refresh .theme-dark div[class^=newMessagesBar_] {
+    --white: var(--base);
+    --control-secondary-background-default: var(--brand-500);
+    --control-secondary-background-hover: var(--brand-530);
+}
+.visual-refresh.theme-dark span[class^=folderGroupBackground_],
+.visual-refresh .theme-dark span[class^=folderGroupBackground_] { --background-mod-subtle: var(--base) !important; }
+.visual-refresh.theme-dark div[class^=newBadge_][class*=textBadge_][style="background-color: var(--brand-260);"],
+.visual-refresh.theme-dark span[class*=botTagOP_],
+.visual-refresh .theme-dark div[class^=newBadge_][class*=textBadge_][style="background-color: var(--brand-260);"],
+.visual-refresh .theme-dark span[class*=botTagOP_] {
+    background-color: var(--brand-500) !important;
+    color: var(--white);
+}
+.visual-refresh.theme-dark div[class^=quickSelectPopoutOption_]:hover[role=option],
+.visual-refresh .theme-dark div[class^=quickSelectPopoutOption_]:hover[role=option] { background-color: var(--interactive-background-hover); }
+.visual-refresh.theme-dark [class*=greenGlow_],
+.visual-refresh .theme-dark [class*=greenGlow_] { background: rgba(166, 227, 161, 0.1); }
+.visual-refresh.theme-dark [class*=greenGlow_]:hover,
+.visual-refresh .theme-dark [class*=greenGlow_]:hover { background: rgba(166, 227, 161, 0.2); }
+.visual-refresh.theme-dark [class*=redGlow_],
+.visual-refresh .theme-dark [class*=redGlow_] { background: rgba(235, 152, 155, 0.1); }
+.visual-refresh.theme-dark [class*=redGlow_]:hover,
+.visual-refresh .theme-dark [class*=redGlow_]:hover { background: rgba(235, 152, 155, 0.2) !important; }
+.visual-refresh.theme-dark button[class^=experimentButton_][class*=buttonColor_][class*=buttonActive_],
+.visual-refresh .theme-dark button[class^=experimentButton_][class*=buttonColor_][class*=buttonActive_] {
+    background-color: rgba(166, 227, 161, 0.1);
+    border: 1px solid rgba(166, 227, 161, 0.1);
+}
+.visual-refresh.theme-dark button[class^=experimentButton_][class*=buttonColor_][class*=buttonActive_]:hover,
+.visual-refresh .theme-dark button[class^=experimentButton_][class*=buttonColor_][class*=buttonActive_]:hover {
+    background-color: rgba(166, 227, 161, 0.2);
+}
+.visual-refresh.theme-dark [style*="color: white"],
+.visual-refresh .theme-dark [style*="color: white"] { color: var(--white) !important; }
+.visual-refresh.theme-dark div[class*=container_]:focus-within:has(>div[class^=inner_]>input),
+.visual-refresh.theme-dark [class*=input_][type=text]:not([readOnly]):focus,
+.visual-refresh.theme-dark [class*=input_][type=text]:not([readOnly]):focus:hover,
+.visual-refresh .theme-dark div[class*=container_]:focus-within:has(>div[class^=inner_]>input),
+.visual-refresh .theme-dark [class*=input_][type=text]:not([readOnly]):focus,
+.visual-refresh .theme-dark [class*=input_][type=text]:not([readOnly]):focus:hover { --text-link: var(--brand-500); }
+.visual-refresh.theme-dark div[class^=toast_][data-type=success],
+.visual-refresh .theme-dark div[class^=toast_][data-type=success] { --status-positive: var(--base); }
+.visual-refresh.theme-dark div[class^=toast_][data-type=failure],
+.visual-refresh .theme-dark div[class^=toast_][data-type=failure] { --icon-feedback-critical: var(--base); }
+.visual-refresh.theme-dark div[class*=button_][class*=dangerous_],
+.visual-refresh .theme-dark div[class*=button_][class*=dangerous_] { color: #EB989B; }
+
+/* switches */
+.visual-refresh.theme-dark label[class^=container_]>div[data-mana-component=switch],
+.visual-refresh .theme-dark label[class^=container_]>div[data-mana-component=switch] {
+    background-color: var(--surface2) !important;
+    border: unset !important;
+    transition: background-color .2s;
+}
+.visual-refresh.theme-dark label[class^=container_]>div[data-mana-component=switch]:hover,
+.visual-refresh .theme-dark label[class^=container_]>div[data-mana-component=switch]:hover { background-color: var(--surface0) !important; }
+.visual-refresh.theme-dark label[class^=container_]>div[data-mana-component=switch]>svg>rect,
+.visual-refresh .theme-dark label[class^=container_]>div[data-mana-component=switch]>svg>rect { fill: var(--white); transition: fill .2s; }
+.visual-refresh.theme-dark label[class^=container_]>div[data-mana-component=switch]:has(+span>input:checked),
+.visual-refresh .theme-dark label[class^=container_]>div[data-mana-component=switch]:has(+span>input:checked) { background-color: var(--brand-500) !important; }
+.visual-refresh.theme-dark label[class^=container_]>div[data-mana-component=switch]:has(+span>input:checked):hover,
+.visual-refresh .theme-dark label[class^=container_]>div[data-mana-component=switch]:has(+span>input:checked):hover { background-color: var(--brand-560) !important; }
+.visual-refresh.theme-dark label[class^=container_]>div[data-mana-component=switch]:has(+span>input:checked)>svg>rect,
+.visual-refresh .theme-dark label[class^=container_]>div[data-mana-component=switch]:has(+span>input:checked)>svg>rect { fill: var(--base); }
+.visual-refresh.theme-dark div.vc-switch-container,
+.visual-refresh .theme-dark div.vc-switch-container { --primary-400: var(--surface2); }
+.visual-refresh.theme-dark div.vc-switch-container svg.vc-switch-slider>rect,
+.visual-refresh .theme-dark div.vc-switch-container svg.vc-switch-slider>rect { fill: var(--white); transition: fill .2s; }
+.visual-refresh.theme-dark div.vc-switch-container.vc-switch-checked>svg.vc-switch-slider>rect,
+.visual-refresh .theme-dark div.vc-switch-container.vc-switch-checked>svg.vc-switch-slider>rect { fill: var(--base); }
+
+/* remapped status-color svg/divs from the original Discord palette to your scheme */
+.visual-refresh.theme-dark svg [fill="#45a366"], .visual-refresh.theme-dark svg[fill="#45a366"],
+.visual-refresh .theme-dark svg [fill="#45a366"], .visual-refresh .theme-dark svg[fill="#45a366"] { fill: #a6d4a0; }
+.visual-refresh.theme-dark div[style="background-color: rgb(69, 163, 102);"],
+.visual-refresh .theme-dark div[style="background-color: rgb(69, 163, 102);"] { background-color: #a6d4a0 !important; }
+.visual-refresh.theme-dark svg [fill="#ffc04e"], .visual-refresh.theme-dark svg[fill="#ffc04e"],
+.visual-refresh .theme-dark svg [fill="#ffc04e"], .visual-refresh .theme-dark svg[fill="#ffc04e"] { fill: #F0DFAD; }
+.visual-refresh.theme-dark div[style="background-color: rgb(255, 192, 78);"],
+.visual-refresh .theme-dark div[style="background-color: rgb(255, 192, 78);"] { background-color: #F0DFAD !important; }
+.visual-refresh.theme-dark svg [fill="#da3e44"], .visual-refresh.theme-dark svg[fill="#da3e44"],
+.visual-refresh .theme-dark svg [fill="#da3e44"], .visual-refresh .theme-dark svg[fill="#da3e44"] { fill: #EB989B; }
+.visual-refresh.theme-dark div[style="background-color: rgb(218, 62, 68);"],
+.visual-refresh .theme-dark div[style="background-color: rgb(218, 62, 68);"] { background-color: #EB989B !important; }
+.visual-refresh.theme-dark svg [fill="#84858d"], .visual-refresh.theme-dark svg[fill="#84858d"],
+.visual-refresh .theme-dark svg [fill="#84858d"], .visual-refresh .theme-dark svg[fill="#84858d"] { fill: var(--overlay1); }
+.visual-refresh.theme-dark div[style="background-color: rgb(132, 133, 141);"],
+.visual-refresh .theme-dark div[style="background-color: rgb(132, 133, 141);"] { background-color: var(--overlay1) !important; }
+.visual-refresh.theme-dark svg [fill="#9147ff"], .visual-refresh.theme-dark svg[fill="#9147ff"],
+.visual-refresh .theme-dark svg [fill="#9147ff"], .visual-refresh .theme-dark svg[fill="#9147ff"] { fill: var(--twitch); }
+.visual-refresh.theme-dark div[style="background-color: rgb(145, 71, 255);"],
+.visual-refresh .theme-dark div[style="background-color: rgb(145, 71, 255);"] { background-color: var(--twitch) !important; }
+
+/* code highlighting */
+.visual-refresh.theme-dark.hljs, .visual-refresh .theme-dark.hljs { color: var(--text); background: var(--base); }
+.visual-refresh.theme-dark .hljs-keyword, .visual-refresh .theme-dark .hljs-keyword { color: #C7BAFA; }
+.visual-refresh.theme-dark .hljs-built_in, .visual-refresh .theme-dark .hljs-built_in { color: #EB989B; }
+.visual-refresh.theme-dark .hljs-type, .visual-refresh .theme-dark .hljs-type { color: #F0DFAD; }
+.visual-refresh.theme-dark .hljs-literal, .visual-refresh .theme-dark .hljs-literal { color: #fab387; }
+.visual-refresh.theme-dark .hljs-number, .visual-refresh .theme-dark .hljs-number { color: #fab387; }
+.visual-refresh.theme-dark .hljs-operator, .visual-refresh .theme-dark .hljs-operator { color: #9CDBD6; }
+.visual-refresh.theme-dark .hljs-punctuation, .visual-refresh .theme-dark .hljs-punctuation { color: var(--subtext1); }
+.visual-refresh.theme-dark .hljs-property, .visual-refresh .theme-dark .hljs-property { color: #94e2d5; }
+.visual-refresh.theme-dark .hljs-regexp, .visual-refresh .theme-dark .hljs-regexp { color: #f5c2e7; }
+.visual-refresh.theme-dark .hljs-string, .visual-refresh .theme-dark .hljs-string { color: #a6d4a0; }
+.visual-refresh.theme-dark .hljs-char.escape_, .visual-refresh .theme-dark .hljs-char.escape_ { color: #a6d4a0; }
+.visual-refresh.theme-dark .hljs-subst, .visual-refresh .theme-dark .hljs-subst { color: var(--subtext0); }
+.visual-refresh.theme-dark .hljs-symbol, .visual-refresh .theme-dark .hljs-symbol { color: #f2cdcd; }
+.visual-refresh.theme-dark .hljs-variable, .visual-refresh .theme-dark .hljs-variable { color: #C7BAFA; }
+.visual-refresh.theme-dark .hljs-variable.language_, .visual-refresh .theme-dark .hljs-variable.language_ { color: #C7BAFA; }
+.visual-refresh.theme-dark .hljs-variable.constant_, .visual-refresh .theme-dark .hljs-variable.constant_ { color: #fab387; }
+.visual-refresh.theme-dark .hljs-title, .visual-refresh .theme-dark .hljs-title { color: var(--brand-500); }
+.visual-refresh.theme-dark .hljs-title.class_, .visual-refresh .theme-dark .hljs-title.class_ { color: #F0DFAD; }
+.visual-refresh.theme-dark .hljs-title.function_, .visual-refresh .theme-dark .hljs-title.function_ { color: var(--brand-500); }
+.visual-refresh.theme-dark .hljs-params, .visual-refresh .theme-dark .hljs-params { color: var(--text); }
+.visual-refresh.theme-dark .hljs-comment, .visual-refresh .theme-dark .hljs-comment { color: var(--overlay2); }
+.visual-refresh.theme-dark .hljs-doctag, .visual-refresh .theme-dark .hljs-doctag { color: #EB989B; }
+.visual-refresh.theme-dark .hljs-meta, .visual-refresh .theme-dark .hljs-meta { color: #fab387; }
+.visual-refresh.theme-dark .hljs-section, .visual-refresh .theme-dark .hljs-section { color: var(--brand-500); }
+.visual-refresh.theme-dark .hljs-tag, .visual-refresh .theme-dark .hljs-tag { color: #94e2d5; }
+.visual-refresh.theme-dark .hljs-name, .visual-refresh .theme-dark .hljs-name { color: #C7BAFA; }
+.visual-refresh.theme-dark .hljs-attr, .visual-refresh .theme-dark .hljs-attr { color: var(--brand-500); }
+.visual-refresh.theme-dark .hljs-attribute, .visual-refresh .theme-dark .hljs-attribute { color: #a6d4a0; }
+.visual-refresh.theme-dark .hljs-bullet, .visual-refresh .theme-dark .hljs-bullet { color: #94e2d5; }
+.visual-refresh.theme-dark .hljs-code, .visual-refresh .theme-dark .hljs-code { color: #a6d4a0; }
+.visual-refresh.theme-dark .hljs-emphasis, .visual-refresh .theme-dark .hljs-emphasis { color: #EB989B; font-style: italic; }
+.visual-refresh.theme-dark .hljs-strong, .visual-refresh .theme-dark .hljs-strong { color: #EB989B; font-weight: bold; }
+.visual-refresh.theme-dark .hljs-formula, .visual-refresh .theme-dark .hljs-formula { color: #94e2d5; }
+.visual-refresh.theme-dark .hljs-link, .visual-refresh .theme-dark .hljs-link { color: #9CDBD6; font-style: italic; }
+.visual-refresh.theme-dark .hljs-quote, .visual-refresh .theme-dark .hljs-quote { color: #a6d4a0; font-style: italic; }
+.visual-refresh.theme-dark .hljs-selector-tag, .visual-refresh .theme-dark .hljs-selector-tag { color: #F0DFAD; }
+.visual-refresh.theme-dark .hljs-selector-id, .visual-refresh .theme-dark .hljs-selector-id { color: var(--brand-500); }
+.visual-refresh.theme-dark .hljs-selector-class, .visual-refresh .theme-dark .hljs-selector-class { color: #94e2d5; }
+.visual-refresh.theme-dark .hljs-selector-attr, .visual-refresh .theme-dark .hljs-selector-attr { color: #C7BAFA; }
+.visual-refresh.theme-dark .hljs-selector-pseudo, .visual-refresh .theme-dark .hljs-selector-pseudo { color: #94e2d5; }
+.visual-refresh.theme-dark .hljs-template-tag, .visual-refresh .theme-dark .hljs-template-tag { color: #f2cdcd; }
+.visual-refresh.theme-dark .hljs-template-variable, .visual-refresh .theme-dark .hljs-template-variable { color: #f2cdcd; }
+.visual-refresh.theme-dark .hljs-addition, .visual-refresh .theme-dark .hljs-addition { color: #a6d4a0; background: rgba(166,227,161,.15); }
+.visual-refresh.theme-dark .hljs-deletion, .visual-refresh .theme-dark .hljs-deletion { color: #EB989B; background: rgba(235,152,155,.15); }
+
+/* rainbow thread accents — green-tinted instead of the default 6-color wheel */
+.visual-refresh.theme-dark ul[class^=content_]>li[class^=container_]>ul[role=group]>div[class^=spineBorder_],
+.visual-refresh .theme-dark ul[class^=content_]>li[class^=container_]>ul[role=group]>div[class^=spineBorder_] {
+    --step: calc(var(--channels-name-line-height) + 10px);
+    background: repeating-linear-gradient(
+        #4d6b48 calc(var(--step) * 0), #4d6b48 calc(var(--step) * 1),
+        #527a4f calc(var(--step) * 1), #527a4f calc(var(--step) * 2),
+        #5c8f57 calc(var(--step) * 2), #5c8f57 calc(var(--step) * 3),
+        #6ba566 calc(var(--step) * 3), #6ba566 calc(var(--step) * 4),
+        #7bbf76 calc(var(--step) * 4), #7bbf76 calc(var(--step) * 5),
+        #8fd68a calc(var(--step) * 5), #8fd68a calc(var(--step) * 6)
+    );
+}
+.visual-refresh.theme-dark ul[class^=content_]>li[class^=container_]>ul[role=group]>li,
+.visual-refresh .theme-dark ul[class^=content_]>li[class^=container_]>ul[role=group]>li,
+.visual-refresh.theme-dark ul[class^=content_]>li[class^=container_]>ul[role=group] li:only-of-type,
+.visual-refresh .theme-dark ul[class^=content_]>li[class^=container_]>ul[role=group] li:only-of-type {
+    --channels-default: rgba(166, 227, 161, 0.7);
+    --interactive-text-hover: var(--brand-500);
+    --interactive-text-active: var(--brand-500);
+    --text-strong: var(--brand-500);
+    --text-default: var(--brand-500);
+    --text-muted: #527a4f;
+    --spine-default: #527a4f;
+}
+
+/* file-type icon backgrounds (document/image/code/etc.) tinted green instead of blue */
+.visual-refresh.theme-dark div[class^=icon_][class*=document_],
+.visual-refresh.theme-dark div[class^=icon_][class*=image_],
+.visual-refresh.theme-dark div[class^=icon_][class*=code_],
+.visual-refresh.theme-dark div[class^=icon_][class*=video_],
+.visual-refresh.theme-dark div[class^=icon_][class*=acrobat_],
+.visual-refresh.theme-dark div[class^=icon_][class*=ae_],
+.visual-refresh.theme-dark div[class^=icon_][class*=sketch_],
+.visual-refresh.theme-dark div[class^=icon_][class*=ai_],
+.visual-refresh.theme-dark div[class^=icon_][class*=archive_],
+.visual-refresh.theme-dark div[class^=icon_][class*=photoshop_],
+.visual-refresh.theme-dark div[class^=icon_][class*=ps_],
+.visual-refresh.theme-dark div[class^=icon_][class*=spreadsheet_],
+.visual-refresh.theme-dark div[class^=icon_][class*=webcode_],
+.visual-refresh.theme-dark div[class^=icon_][class*=audio_],
+.visual-refresh.theme-dark div[class^=icon_][class*=unknown_],
+.visual-refresh .theme-dark div[class^=icon_][class*=document_],
+.visual-refresh .theme-dark div[class^=icon_][class*=image_],
+.visual-refresh .theme-dark div[class^=icon_][class*=code_],
+.visual-refresh .theme-dark div[class^=icon_][class*=video_],
+.visual-refresh .theme-dark div[class^=icon_][class*=acrobat_],
+.visual-refresh .theme-dark div[class^=icon_][class*=ae_],
+.visual-refresh .theme-dark div[class^=icon_][class*=sketch_],
+.visual-refresh .theme-dark div[class^=icon_][class*=ai_],
+.visual-refresh .theme-dark div[class^=icon_][class*=archive_],
+.visual-refresh .theme-dark div[class^=icon_][class*=photoshop_],
+.visual-refresh .theme-dark div[class^=icon_][class*=ps_],
+.visual-refresh .theme-dark div[class^=icon_][class*=spreadsheet_],
+.visual-refresh .theme-dark div[class^=icon_][class*=webcode_],
+.visual-refresh .theme-dark div[class^=icon_][class*=audio_],
+.visual-refresh .theme-dark div[class^=icon_][class*=unknown_] {
+    filter: hue-rotate(80deg) saturate(0.9);
+}
+
+/* misc accent svgs (premium perks, badges, status indicators) — tint green */
+.visual-refresh.theme-dark svg[class*=tier1ProfilePerk_], .visual-refresh .theme-dark svg[class*=tier1ProfilePerk_] { color: var(--brand-500) !important; }
+.visual-refresh.theme-dark svg[class*=tier1StreamPerk_], .visual-refresh .theme-dark svg[class*=tier1StreamPerk_] { color: #a6d4a0 !important; }
+.visual-refresh.theme-dark svg[class*=threadIcon_], .visual-refresh .theme-dark svg[class*=threadIcon_] { color: var(--text) !important; }
+.visual-refresh.theme-dark svg[class*=gameIcon_], .visual-refresh .theme-dark svg[class*=gameIcon_] { color: var(--text) !important; }
+.visual-refresh.theme-dark svg[class*=searchIcon_], .visual-refresh .theme-dark svg[class*=searchIcon_] { color: var(--subtext0) !important; }
+.visual-refresh.theme-dark svg[class*=noItemsIcon_], .visual-refresh .theme-dark svg[class*=noItemsIcon_] { background-color: var(--surface2); }
+
+
+/* ===============
+   custom DM Icons
+   =============== */
+body {
+    --dms-icon-svg-inactive: url('https://raw.githubusercontent.com/ckruu/nodocha-hojicha/refs/heads/main/Assets/discord/dm-idle.svg');
+    --dms-icon-svg-active: url('https://raw.githubusercontent.com/ckruu/nodocha-hojicha/refs/heads/main/Assets/discord/dm-active.svg');
+    --dms-icon-svg-size: 65%;
+}
+.childWrapper__6e9f8 > svg {
+    display: none !important;
+}
+.wrapper__6e9f8[data-list-item-id='guildsnav___home'],
+.wrapper__6e9f8[data-list-item-id='guildsnav___home'] .childWrapper__6e9f8,
+.wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover .childWrapper__6e9f8,
+.wrapper__6e9f8[data-list-item-id='guildsnav___home']:active .childWrapper__6e9f8,
+.wrapper__6e9f8[data-list-item-id='guildsnav___home'].selected__6e9f8 .childWrapper__6e9f8 {
+    transform: none !important;
+    transition: none !important;
+    animation: none !important;
+}
+.wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8::before {
+    display: none !important;
+    content: none !important;
+}
+.wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8 {
+    mask: none !important;
+    -webkit-mask: none !important;
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
+    clip-path: none !important;
+    -webkit-clip-path: none !important;
+    background-image: var(--dms-icon-svg-inactive) !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: var(--dms-icon-svg-size) !important;
+}
+.wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8,
+.wrapper__6e9f8[data-list-item-id='guildsnav___home'].selected__6e9f8 > .childWrapper__6e9f8,
+.wrapper__6e9f8[data-list-item-id='guildsnav___home'] .childWrapper__6e9f8:active {
+    mask: none !important;
+    -webkit-mask: none !important;
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
+    clip-path: none !important;
+    -webkit-clip-path: none !important;
+    background-image: var(--dms-icon-svg-active) !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: var(--dms-icon-svg-size) !important;
+}
+* {
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+}
+
+*::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+    display: none !important;
+}
+
+*::-webkit-scrollbar-thumb {
+    display: none !important;
+    background: transparent !important;
+}
+
+*::-webkit-scrollbar-track {
+    display: none !important;
+    background: transparent !important;
+}
+
+*::-webkit-scrollbar-corner {
+    display: none !important;
+    background: transparent !important;
+}
+
+.scrollerBase__99f8c,
+.auto__99f8c,
+.thin__99f8c,
+.none__99f8c,
+.scroller__99f8c,
+.scroller__36d07,
+.scroller__7d20c,
+.contentRegionScroller__23e6b,
+.sidebarRegionScroller__23e6b,
+.standardSidebarView__23e6b,
+.peopleList__5ec2f,
+.membersWrap_c8ffbb,
+.members_c8ffbb,
+.chatContent_f75fb0,
+.messagesWrapper__36d07,
+.container__133bf,
+.panels_c48ade,
+.privateChannels__35e86,
+.guilds_c48ade,
+.content__99f8c,
+.pageBody__41ed7,
+.container__551b0,
+.applicationStore_f07d62,
+.shopScroll__6db1d,
+.layer__960e4,
+.contentRegion__23e6b,
+.noticeRegion__23e6b,
+.searchResultsWrap__2eac7,
+.resultsGroup__56fec,
+.container__9293f,
+.sidebarList_c48ade {
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+}
+
+.scrollerBase__99f8c::-webkit-scrollbar,
+.auto__99f8c::-webkit-scrollbar,
+.thin__99f8c::-webkit-scrollbar,
+.none__99f8c::-webkit-scrollbar,
+.scroller__99f8c::-webkit-scrollbar,
+.scroller__36d07::-webkit-scrollbar,
+.scroller__7d20c::-webkit-scrollbar,
+.contentRegionScroller__23e6b::-webkit-scrollbar,
+.sidebarRegionScroller__23e6b::-webkit-scrollbar,
+.standardSidebarView__23e6b::-webkit-scrollbar,
+.peopleList__5ec2f::-webkit-scrollbar,
+.membersWrap_c8ffbb::-webkit-scrollbar,
+.members_c8ffbb::-webkit-scrollbar,
+.chatContent_f75fb0::-webkit-scrollbar,
+.messagesWrapper__36d07::-webkit-scrollbar,
+.container__133bf::-webkit-scrollbar,
+.panels_c48ade::-webkit-scrollbar,
+.privateChannels__35e86::-webkit-scrollbar,
+.guilds_c48ade::-webkit-scrollbar,
+.content__99f8c::-webkit-scrollbar,
+.pageBody__41ed7::-webkit-scrollbar,
+.container__551b0::-webkit-scrollbar,
+.applicationStore_f07d62::-webkit-scrollbar,
+.shopScroll__6db1d::-webkit-scrollbar,
+.layer__960e4::-webkit-scrollbar,
+.contentRegion__23e6b::-webkit-scrollbar,
+.noticeRegion__23e6b::-webkit-scrollbar,
+.searchResultsWrap__2eac7::-webkit-scrollbar,
+.resultsGroup__56fec::-webkit-scrollbar,
+.container__9293f::-webkit-scrollbar,
+.sidebarList_c48ade::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+}

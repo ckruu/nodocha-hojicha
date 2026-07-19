@@ -28,7 +28,7 @@ global:
   #   - Round: Fully rounded corners
   #   - RoundSmall: Slightly rounded corners
   #   - Or specify any numeric value for a custom radius
-  border_radius: 0
+  border_radius: 7
 
   # border_z_order: Z-order of the border relative to its window. Supported values:
   #   - AboveWindow: Place the border above its window
@@ -79,7 +79,7 @@ global:
   #             start: [0.0, 1.0]
   #             end: [1.0, 0.0]
   #       NOTE: [0.0, 0.0] = top-left, [1.0, 1.0] = bottom-right
-  active_color: "#A6E3A1"
+  active_color: "#A6D4A0"
 
   inactive_color: "#2e3a35"
 

@@ -1,0 +1,9 @@
+{
+  "monitor": 2,
+  "monitorInterfaceName": "",
+  "horizontalPlacement": "right",
+  "horizontalDistanceFromScreenEdge": 1,
+  "verticalPlacement": "top",
+  "verticalDistanceFromScreenEdge": -19,
+  "animationDirection": "automatic"
+}

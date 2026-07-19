@@ -1,5 +1,130 @@
+animations:
+  # Animation settings for pure window translations (position changes only).
+  window_move:
+    enabled: true
+    duration_ms: 320
+    # Easing function. Named options: 'linear', 'ease_in', 'ease_out',
+    # 'ease_in_out', 'ease_in_cubic', 'ease_out_cubic', 'ease_in_out_cubic',
+    # 'ease_out_spring'. Custom cubic bezier: 'cubic_bezier(x1, y1, x2, y2)'
+    # where x1/x2 must be in [0, 1]; y1/y2 may exceed that range for
+    # overshoot. Examples:
+    #   "cubic_bezier(0.16, 1, 0.3, 1)"  - expo-out (fast start, smooth stop)
+    #   "cubic_bezier(0.4, 0, 0.2, 1)"   - Material Design standard
+    easing: "cubic_bezier(0.2, 0.0, 0.0, 1.0)"
+    # Minimum pixel distance required to trigger movement animations.
+    # Helps prevent animations from starting on very small position changes.
+    # Increase this value on high-DPI displays to reduce sensitivity.
+    # Default: 10
+    threshold_px: 10
+
+  # Animation settings for window resize operations.
+  # When a single layout change both moves and resizes windows, the moved
+  # windows share this resize timing so all edges stay in lock-step.
+  window_resize:
+    enabled: true
+    duration_ms: 320
+    # See 'window_move.easing' for available options.
+    easing: "cubic_bezier(0.2, 0.0, 0.0, 1.0)"
+    # Minimum pixel distance required to trigger resize animations.
+    # Default: 10
+    threshold_px: 10
+
+  # Animation settings for when a new window appears. Windows only.
+  window_open:
+    enabled: true
+    duration_ms: 320
+    # See 'window_move.easing' for available options.
+    easing: "cubic_bezier(0.16, 1.0, 0.3, 1.0)"
+    # Transition style. Options:
+    #   'slide_right' (default) - slides in from the right
+    #   'slide_left'            - slides in from the left
+    #   'slide_top'             - slides in from the top
+    #   'slide_bottom'          - slides in from the bottom
+    #   'none' / 'fade'         - no slide; combine with opacity_from for pure fade
+    #   'zoom'                  - zoom in from window center
+    style: "zoom"
+    # Starting opacity (0.0–1.0). At 1.0 no fade is applied; at 0.0 the
+    # window fades in from fully transparent. Can be combined with any style.
+    opacity_from: 1.0
+
+  # Animation settings for workspace-switch transitions.
+  workspace_switch:
+    enabled: true
+    duration_ms: 380
+    # See 'window_move.easing' for available options.
+    easing: "ease_out_cubic"
+    # Motion style. Options:
+    #   'slide' (default) - workspaces slide along the 'direction' axis
+    #   'fade'            - pure crossfade; both workspaces stay in place
+    #   'zoom'            - outgoing shrinks to monitor center, incoming expands
+    #   'iris'            - a frozen snapshot of the old workspace stays on top
+    #                       while a circular hole grows from 'iris_origin',
+    #                       revealing the new workspace beneath (Windows only)
+    style: "slide"
+    # Slide axis when type is 'slide'. Options: 'horizontal' (default), 'vertical'.
+    direction: "horizontal"
+    # Origin of the circle when type is 'iris'. Options:
+    #   'center' (default) - grow from the monitor center
+    #   'cursor'           - grow from the current mouse-cursor position
+    #   'focused_window'   - grow from the center of the newly focused window
+    iris_origin: "center"
+    # Opacity at the end of the outgoing workspace's exit (0.0–1.0).
+    # 1.0 = stays fully opaque (default); 0.0 = fades out to transparent.
+    # Combine with opacity_incoming: 0.0 for a crossfade on any style.
+    opacity_outgoing: 1.0
+    # Opacity at the start of the incoming workspace's entrance (0.0–1.0).
+    # 1.0 = starts fully opaque (default); 0.0 = fades in from transparent.
+    opacity_incoming: 1.0
+    # Amount of workspace-level zoom applied during 'slide' transitions. The
+    # outgoing workspace shrinks from 1.0 to (1 - zoom_factor) as it exits;
+    # the incoming grows from (1 - zoom_factor) to 1.0. Scaling is from the
+    # monitor center so all windows move inward together. Range: 0.0 (no zoom)
+    # to 1.0 (collapses to a point). Has no effect on 'fade' or 'zoom' styles.
+    zoom_factor: 0.0
+
+  # Animation settings for when a window is closed (Windows only).
+  window_close:
+    enabled: true
+    duration_ms: 150
+    # See 'window_move.easing' for available options.
+    easing: "ease_in_cubic"
+    # Transition style. Options:
+    #   'none' / 'fade' (default) - no positional movement; combine with opacity_to for a fade
+    #   'zoom'                    - zoom out from window center
+    #   'slide_right'             - slide off the right edge
+    #   'slide_left'              - slide off the left edge
+    #   'slide_top'               - slide off the top edge
+    #   'slide_bottom'            - slide off the bottom edge
+    style: "zoom"
+    # Final opacity (0.0–1.0). At 0.0 the window fades to fully transparent;
+    # at 1.0 no fade is applied.
+    opacity_to: 0.0
+
+  # Animation settings for when the focused window changes (Windows only).
+  focus_change:
+    enabled: false
+    duration_ms: 150
+    # See 'window_move.easing' for available options.
+    easing: "cubic_bezier(0.16, 1.0, 0.3, 1.0)"
+    # Animation style. Options:
+    #   'opacity' (default) - window briefly dims then restores opacity
+    #   'scale'             - window briefly pops in from a slightly smaller size
+    style: "opacity"
+    # For 'opacity' type: dim level at the start of the animation, relative to
+    # the effect opacity. E.g. 0.5 = dims to 50% of effect opacity then
+    # restores. Range: 0.0–1.0. Default: 0.5.
+    opacity_from: 0.5
+    # For 'scale' type: ratio of the initial shrunken size relative to the
+    # window's actual size. E.g. 0.98 = window starts at 98% and grows to 100%.
+    # Range: 0.5–1.0.
+    scale_factor: 0.98
+    # Which focus changes trigger the animation. Options:
+    #   'all'            - animate on all focus changes (keyboard and mouse)
+    #   'keyboard_only'  - animate only on keyboard/WM-command focus changes
+    trigger: "all"
+
 general:
-  startup_commands: ['shell-exec yasb', 'shell-exec gat-gwm']
+  startup_commands: ['shell-exec gat-gwm']
   focus_follows_cursor: false
   toggle_workspace_on_refocus: false
   cursor_jump:
@@ -10,10 +135,10 @@ general:
 gaps:
   inner_gap: "14px"
   outer_gap:
-    top: "14px"
-    right: "14px"
-    bottom: "14px"
-    left: "14px"
+    top: "12px"
+    right: "20px"
+    bottom: "20px"
+    left: "20px"
 
 window_effects:
   focused_window:
