@@ -29,7 +29,7 @@ A calm, greenish theme inspired by my favorite character from K-ON Nodoka Manabe
 - Clean and simplicity in mind, focusing more on productivity
 
 ### 🦅 Windhawk Mods
-#### Configured
+| Configured |
 |:-------|
 | Lockscreen Styler [⚙️ Config](./Windhawk/Lockscreen.yml) • [Clock Font](https://www.dafont.com/quinquefive.font) • [Date Font](https://fonts.google.com/specimen/Pixelify+Sans) |
 | <img width="1920" height="1080" alt="image" src="./Assets/Screenshots/Windhawk/Lockscreen.png" /> |
@@ -59,7 +59,7 @@ A calm, greenish theme inspired by my favorite character from K-ON Nodoka Manabe
 
 ### 🖱️ App Themes
 #### Main
-| [YASB](https://github.com/amnweb/yasb) [⚙️ Config](./Apps/YASB/config.yaml) • [⚙️ Styles](./Apps/YASB/styles.css) • [Material Symbols](https://discord.com/channels/1353495377768218654/1500414078483693598/1504200300142002368) - [Original repo](https://github.com/pixtelslinks/yasb-material-theme) by @pixtelslinks on Discord. |
+| [YASB](https://github.com/amnweb/yasb) [⚙️ Config](./Apps/YASB/config.yaml) • [⚙️ Styles](./Apps/YASB/styles.css) • [Material Symbols](https://discord.com/channels/1353495377768218654/1500414078483693598/1504200300142002368) - [Original repo](https://github.com/pixtelslinks/yasb-material-theme) by @pixtelslinks on Discord. [Warning](#️-known-issues) |
 | <img width="1920" height="1080" alt="image" src="./Assets/Screenshots/Apps/YASB.png" /> |
 | [GlazeWM](https://github.com/glzr-io/glazewm) [⚙️ Config](./Apps/GlazeWM/config.yaml) • This config includes GlazeWM animations, compile [this fork of GlazeWM](https://github.com/florensm/glazewm/tree/feat/animations-pr) to use it. |
 | <img width="1920" height="1080" alt="image" src="./Assets/Screenshots/Apps/GlazeWM.png" /> |
