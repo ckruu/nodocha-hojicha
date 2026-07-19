@@ -47,7 +47,7 @@ A calm, greenish theme inspired by my favorite character from K-ON Nodoka Manabe
 | [Taskbar Height & icon size](https://windhawk.net/mods/taskbar-icon-size) [⚙️ Config](./Windhawk/Taskbar%20Height.yml) - Make taskbar invisible |
 
 | Taskbar | Windows Explorer |
-|:-------|
+|:-------|:-------|
 | [Block start menu and hosts](https://windhawk.net/mods/block-windows-startmenu-and-hosts) | [Windows 7 Command Bar](https://windhawk.net/mods/win7-command-bar) |
 | [Disable Taskbar Thumbnails](https://windhawk.net/mods/taskbar-thumbnails) | [Explorerframe fixes for Win11 22H2+](https://windhawk.net/mods/explorerframe-fixes-for-win11-22h2plus) |
 | [Taskbar on top for Windows 11](https://windhawk.net/mods/taskbar-on-top) | [Hide Search Bar](https://windhawk.net/mods/hide-search-bar) | [UXTheme hook](https://windhawk.net/mods/uxtheme-hook) |
