@@ -90,7 +90,7 @@ A calm, greenish theme inspired by my favorite character from K-ON Nodoka Manabe
 - [Now playing notification](./Misc/cidertoast.pyw) - Reuires python, very early stage and often times out when network problem occurs or cider closed, only tested with Cider.
 
 ### ⚠️ Known Issues
-- Desktop/Screen margin is wallpaper based because YASB Doesn't currently support it. If you wish to replicate it, you can use this [Figma template](figma.com) to use it with your own wallpaper, or use the [Pre-made wallpapers](link.to)
+- Desktop/Screen margin effect is wallpaper based because YASB Doesn't currently support it.
 - YASB bar is transparent, visibility may vary based on current wallpaper.
 - Windows Lockscreen mod can sometimes not start upon boot, this is a known limitation of how windhawk works.
 - Only tested with 1080p 16:9 monitors with dual monitor setup. if you use a different resolution than 1080p 16:9 some things will broke.
