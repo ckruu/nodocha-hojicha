@@ -14,10 +14,11 @@ A calm, greenish theme inspired by my favorite character from K-ON Nodoka Manabe
 <div>
 
 ### 🖼️ Preview
-![Preview 1](./Misc/Screenshots/p1.png)
-![Preview 2](./Misc/Screenshots/p2.png)
-![Preview 3](./Misc/Screenshots/p3.png)
-![Preview 4](./Misc/Screenshots/p4.png)
+| Desktop | Other Part |
+|:---|:---------------|
+| <img width="1920" height="1080" alt="image" src="./Misc/Screenshots/p1.png" /> | <img width="1920" height="1080" alt="image" src="./Misc/Screenshots/p2.png" /> |
+|:---|:---------------|
+| <img width="1920" height="1080" alt="image" src="./Misc/Screenshots/p3.png" /> | <img width="1920" height="1080" alt="image" src="./Misc/Screenshots/p4.png" /> |
 
 > Screenshots are still WIP, some stuff below this part isn't updated yet to reflect the shown screenshot. this message will be deleted in the future.
 
