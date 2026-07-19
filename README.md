@@ -15,7 +15,7 @@ A calm, greenish theme inspired by my favorite character from K-ON Nodoka Manabe
 
 ### 🖼️ Preview
 | Desktop | Applications  & Lockscreen |
-|:---|:---------------|
+|:---------------|:---------------|
 | <img width="1920" height="1080" alt="image" src="./Misc/Screenshots/p1.png" /> | <img width="1920" height="1080" alt="image" src="./Misc/Screenshots/p6.png" /> |
 | <img width="1920" height="1080" alt="image" src="./Misc/Screenshots/p3.png" /> | <img width="1920" height="1080" alt="image" src="./Misc/Screenshots/p5.png" /> |
 | <img width="1920" height="1080" alt="image" src="./Misc/Screenshots/p2.png" /> | <img width="1920" height="1080" alt="image" src="./Misc/Screenshots/p4.png" /> |
