@@ -30,6 +30,7 @@ A calm, greenish theme inspired by my favorite character from K-ON Nodoka Manabe
 
 ### 🦅 Windhawk Mods
 #### Configured
+|:-------|
 | Lockscreen Styler [⚙️ Config](./Windhawk/Lockscreen.yml) • [Clock Font](https://www.dafont.com/quinquefive.font) • [Date Font](https://fonts.google.com/specimen/Pixelify+Sans) |
 | <img width="1920" height="1080" alt="image" src="./Assets/Screenshots/Windhawk/Lockscreen.png" /> |
 | [Notification Styler](https://windhawk.net/mods/windows-11-notification-center-styler) [⚙️ Config](./Windhawk/Notification%20Center.yml) |
