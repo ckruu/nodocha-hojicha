@@ -46,7 +46,6 @@ A calm, greenish theme inspired by my favorite character from K-ON Nodoka Manabe
 | [Taskbar tray system icon tweaks](https://windhawk.net/mods/taskbar-tray-system-icon-tweaks) [⚙️ Config](./Windhawk/Taskbar%20tray.yml) - Removes every tray icon |
 | [Taskbar Height & icon size](https://windhawk.net/mods/taskbar-icon-size) [⚙️ Config](./Windhawk/Taskbar%20Height.yml) - Make taskbar invisible |
 
-| Stock | |
 | Taskbar | Windows Explorer |
 |:-------|
 | [Block start menu and hosts](https://windhawk.net/mods/block-windows-startmenu-and-hosts) | [Windows 7 Command Bar](https://windhawk.net/mods/win7-command-bar) |
