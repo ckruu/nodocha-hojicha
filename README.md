@@ -14,9 +14,11 @@ A calm, greenish theme inspired by my favorite character from K-ON Nodoka Manabe
 <div>
 
 ### 🖼️ Previews
-| <img width="1920" height="1080" alt="image" src="./Assets/README/Screenshots/p1.png" /> | <img width="1920" height="1080" alt="image" src="./Assets/README/Screenshots/p6.png" /> |
-| <img width="1920" height="1080" alt="image" src="./Assets/README/Screenshots/p3.png" /> | <img width="1920" height="1080" alt="image" src="./Assets/README/Screenshots/p5.png" /> |
-| <img width="1920" height="1080" alt="image" src="./Assets/README/Screenshots/p2.png" /> | <img width="1920" height="1080" alt="image" src="./Assets/README/Screenshots/p4.png" /> |
+| Desktop | Others |
+|:-------|:-------|
+| <img width="1920" height="1080" alt="image" src="./Assets/Screenshots/README/p1.png" /> | <img width="1920" height="1080" alt="image" src="./Assets/Screenshots/README/p6.png" /> |
+| <img width="1920" height="1080" alt="image" src="./Assets/Screenshots/README/p3.png" /> | <img width="1920" height="1080" alt="image" src="./Assets/Screenshots/README/p5.png" /> |
+| <img width="1920" height="1080" alt="image" src="./Assets/Screenshots/README/p2.png" /> | <img width="1920" height="1080" alt="image" src="./Assets/Screenshots/README/p4.png" /> |
 
 > Screenshots are still WIP, some stuff below this part isn't updated yet to reflect the shown screenshot. this message will be deleted in the future.
 
