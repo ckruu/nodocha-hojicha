@@ -20,8 +20,6 @@ A calm, greenish theme inspired by my favorite character from K-ON Nodoka Manabe
 | <img width="1920" height="1080" alt="image" src="./Assets/Screenshots/README/p3.png" /> | <img width="1920" height="1080" alt="image" src="./Assets/Screenshots/README/p5.png" /> |
 | <img width="1920" height="1080" alt="image" src="./Assets/Screenshots/README/p2.png" /> | <img width="1920" height="1080" alt="image" src="./Assets/Screenshots/README/p4.png" /> |
 
-> Screenshots are still WIP, some stuff below this part isn't updated yet to reflect the shown screenshot. this message will be deleted in the future.
-
 #### Features
 - Matching themes across several apps and system parts
 - Reimagined Windows UI
@@ -89,7 +87,7 @@ A calm, greenish theme inspired by my favorite character from K-ON Nodoka Manabe
 - [Now playing notification](./Misc/cidertoast.pyw) - Reuires python, very early stage and often times out when network problem occurs or cider closed, only tested with Cider.
 
 ### ⚠️ Known Issues
-- Desktop/Screen margin effect is wallpaper based because YASB Doesn't currently support it.
+- <strike>Desktop/Screen margin effect is wallpaper based because YASB Doesn't currently support it.</strike> Added a Windhawk workaround that renders a customizable additional margins on desktop, with an additional support with Wallpaper Engine.
 - YASB bar is transparent, visibility may vary based on current wallpaper.
 - Windows Lockscreen mod can sometimes not start upon boot, this is a known limitation of how windhawk works.
 - Only tested with 1080p 16:9 monitors with dual monitor setup. if you use a different resolution than 1080p 16:9 some things will broke.
